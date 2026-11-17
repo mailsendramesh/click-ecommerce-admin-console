@@ -1,0 +1,49 @@
+transaction_id,order_date,customer_name,product_sku,product_name,quantity,unit_price_inr,gross_amount_inr,status,channel,region
+CK-TX-26001,2026-10-28,Riya Bansal,CK-106,Linen Shirt,1,1299,1299,Refunded,App,South
+CK-TX-26002,2026-10-31,Kiran Nair,CK-103,Canvas Tote,1,699,699,Delivered,Marketplace,East
+CK-TX-26003,2026-11-03,Mira Thomas,CK-108,Travel Bottle,2,599,1198,Shipped,Website,West
+CK-TX-26004,2026-11-06,Neha Kapoor,CK-105,Ceramic Coffee Mug,1,399,399,Processing,App,North
+CK-TX-26005,2026-11-09,Dev Shah,CK-102,Classic Denim,1,1499,1499,Processing,Marketplace,South
+CK-TX-26006,2026-11-12,Aditi Sen,CK-107,Workday Backpack,2,1899,3798,Paid,Website,East
+CK-TX-26007,2026-11-15,Ishaan Das,CK-105,Ceramic Coffee Mug,1,399,399,Paid,App,West
+CK-TX-26008,2026-10-26,Rohit Menon,CK-102,Classic Denim,1,1499,1499,Paid,Marketplace,North
+CK-TX-26009,2026-10-29,Farah Ali,CK-107,Workday Backpack,2,1899,3798,Paid,Website,South
+CK-TX-26010,2026-11-01,Pranav Iyer,CK-104,Everyday Sneakers,1,2199,2199,Paid,App,East
+CK-TX-26011,2026-11-04,Sana Roy,CK-101,Cotton Everyday Tee,1,499,499,Refunded,Marketplace,West
+CK-TX-26012,2026-11-07,Riya Bansal,CK-106,Linen Shirt,2,1299,2598,Delivered,Website,North
+CK-TX-26013,2026-11-10,Kiran Nair,CK-103,Canvas Tote,1,699,699,Shipped,App,South
+CK-TX-26014,2026-11-13,Mira Thomas,CK-101,Cotton Everyday Tee,1,499,499,Processing,Marketplace,East
+CK-TX-26015,2026-11-16,Anika Rao,CK-106,Linen Shirt,2,1299,2598,Processing,Website,West
+CK-TX-26016,2026-10-27,Dev Shah,CK-103,Canvas Tote,1,699,699,Paid,App,North
+CK-TX-26017,2026-10-30,Aditi Sen,CK-108,Travel Bottle,1,599,599,Paid,Marketplace,South
+CK-TX-26018,2026-11-02,Ishaan Das,CK-105,Ceramic Coffee Mug,2,399,798,Paid,Website,East
+CK-TX-26019,2026-11-05,Neha Kapoor,CK-102,Classic Denim,1,1499,1499,Paid,App,West
+CK-TX-26020,2026-11-08,Farah Ali,CK-107,Workday Backpack,1,1899,1899,Paid,Marketplace,North
+CK-TX-26021,2026-11-11,Pranav Iyer,CK-105,Ceramic Coffee Mug,2,399,798,Refunded,Website,South
+CK-TX-26022,2026-11-14,Sana Roy,CK-102,Classic Denim,1,1499,1499,Delivered,App,East
+CK-TX-26023,2026-10-25,Rohit Menon,CK-107,Workday Backpack,1,1899,1899,Shipped,Marketplace,West
+CK-TX-26024,2026-10-28,Kiran Nair,CK-104,Everyday Sneakers,2,2199,4398,Processing,Website,North
+CK-TX-26025,2026-10-31,Mira Thomas,CK-101,Cotton Everyday Tee,1,499,499,Processing,App,South
+CK-TX-26026,2026-11-03,Anika Rao,CK-106,Linen Shirt,1,1299,1299,Paid,Marketplace,East
+CK-TX-26027,2026-11-06,Riya Bansal,CK-103,Canvas Tote,2,699,1398,Paid,Website,West
+CK-TX-26028,2026-11-09,Aditi Sen,CK-101,Cotton Everyday Tee,1,499,499,Paid,App,North
+CK-TX-26029,2026-11-12,Ishaan Das,CK-106,Linen Shirt,1,1299,1299,Paid,Marketplace,South
+CK-TX-26030,2026-11-15,Neha Kapoor,CK-103,Canvas Tote,2,699,1398,Paid,Website,East
+CK-TX-26031,2026-10-26,Dev Shah,CK-108,Travel Bottle,1,599,599,Refunded,App,West
+CK-TX-26032,2026-10-29,Pranav Iyer,CK-105,Ceramic Coffee Mug,1,399,399,Delivered,Marketplace,North
+CK-TX-26033,2026-11-01,Sana Roy,CK-102,Classic Denim,2,1499,2998,Shipped,Website,South
+CK-TX-26034,2026-11-04,Rohit Menon,CK-107,Workday Backpack,1,1899,1899,Processing,App,East
+CK-TX-26035,2026-11-07,Farah Ali,CK-105,Ceramic Coffee Mug,1,399,399,Processing,Marketplace,West
+CK-TX-26036,2026-11-10,Mira Thomas,CK-102,Classic Denim,2,1499,2998,Paid,Website,North
+CK-TX-26037,2026-11-13,Anika Rao,CK-107,Workday Backpack,1,1899,1899,Paid,App,South
+CK-TX-26038,2026-11-16,Riya Bansal,CK-104,Everyday Sneakers,1,2199,2199,Paid,Marketplace,East
+CK-TX-26039,2026-10-27,Kiran Nair,CK-101,Cotton Everyday Tee,2,499,998,Paid,Website,West
+CK-TX-26040,2026-10-30,Ishaan Das,CK-106,Linen Shirt,1,1299,1299,Paid,App,North
+CK-TX-26041,2026-11-02,Neha Kapoor,CK-103,Canvas Tote,1,699,699,Refunded,Marketplace,South
+CK-TX-26042,2026-11-05,Dev Shah,CK-101,Cotton Everyday Tee,2,499,998,Delivered,Website,East
+CK-TX-26043,2026-11-08,Aditi Sen,CK-106,Linen Shirt,1,1299,1299,Shipped,App,West
+CK-TX-26044,2026-11-11,Sana Roy,CK-103,Canvas Tote,1,699,699,Processing,Marketplace,North
+CK-TX-26045,2026-11-14,Rohit Menon,CK-108,Travel Bottle,2,599,1198,Processing,Website,South
+CK-TX-26046,2026-10-25,Farah Ali,CK-105,Ceramic Coffee Mug,1,399,399,Paid,App,East
+CK-TX-26047,2026-10-28,Pranav Iyer,CK-102,Classic Denim,1,1499,1499,Paid,Marketplace,West
+CK-TX-26048,2026-10-31,Anika Rao,CK-107,Workday Backpack,2,1899,3798,Paid,Website,North

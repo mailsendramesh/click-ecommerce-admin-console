@@ -1,0 +1,86 @@
+.card {
+  min-width: 0;
+  min-height: 126px;
+  background: #fff;
+  border: 1px solid #EDF0F5;
+  border-radius: 12px;
+  padding: 17px 17px 15px;
+  box-shadow: 0 2px 8px #14243B05;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.icon {
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.blue {
+  background: #EEF4FF;
+  color: #2066DD;
+}
+
+.green {
+  background: #EAF7F0;
+  color: #16794E;
+}
+
+.purple {
+  background: #F2EEFF;
+  color: #7554C7;
+}
+
+.orange {
+  background: #FFF3E5;
+  color: #B76B17;
+}
+
+.label {
+  font-size: 12px;
+  color: #65758D;
+  font-weight: 650;
+}
+
+.value {
+  display: block;
+  margin: 12px 0 5px;
+  color: #14243B;
+  font-size: 25px;
+  letter-spacing: -0.7px;
+  white-space: nowrap;
+}
+
+.note {
+  font-size: 10px;
+  color: #16834A;
+}
+
+@media(max-width: 420px) {
+  .card {
+    min-height: 116px;
+    padding: 13px 11px;
+  }
+
+  .value {
+    font-size: 19px;
+    margin-top: 10px;
+  }
+
+  .label {
+    font-size: 11px;
+  }
+
+  .icon {
+    width: 23px;
+    height: 23px;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "currency": "INR",
+  "transactions": 48,
+  "gross_sales_inr": 70436,
+  "net_sales_excluding_refunds_inr": 66542,
+  "processing_orders": 10,
+  "status_breakdown": {
+    "Refunded": 5,
+    "Delivered": 5,
+    "Shipped": 5,
+    "Processing": 10,
+    "Paid": 23
+  },
+  "source": "transactions.json",
+  "calculation_note": "Net excludes Refunded only; gross includes every record."
+}

@@ -1,0 +1,85 @@
+CLICK ECOMMERCE — TEST RESULTS
+================================
+
+Project: Click Ecommerce Admin Console
+Test date: 17 November 2026
+
+1. AUTOMATED CHECKS
+-------------------
+
+Fixture tests:
+Command: npm run test:fixtures
+Observed result: The fixture test command was run. The visible terminal output showed:
+- skipped: 0
+- todo: 0
+The complete final test summary should be retained/checked from the terminal before submission if the reviewer requires the exact pass count.
+
+Production build:
+Command: npm run build
+Observed result: PASS
+- Vite production build completed.
+- 44 modules transformed.
+- dist/index.html and bundled assets were generated.
+- Build completed successfully.
+
+2. BROWSER / MANUAL CHECKS
+--------------------------
+
+Browser used for final viewport checks: Google Chrome
+Version: 157.0.0.0 (version reported by the browser environment)
+
+Manual navigation:
+- Overview: checked; dashboard KPI cards and recent transactions displayed.
+- Orders: checked; 48 total orders and status counts displayed.
+- Products: user reported the page worked correctly.
+- Customers: user reported the page worked correctly.
+- Analytics: checked; gross sales and status breakdown displayed.
+- Settings: user reported the page worked correctly.
+
+Search:
+- Search control is present in the header.
+- Record the actual search interaction result here after a final manual test.
+
+3. RESPONSIVE VIEWPORT EVIDENCE
+-------------------------------
+
+The following screenshot dimensions were verified from the uploaded image evidence:
+
+- Desktop_1440_result.png — 1440 × 900
+- Tablet_768_result.png — 768 × 1024
+- Mobile_390_result.png — 390 × 844
+
+Responsive observations:
+- Desktop: four KPI cards and the full five-column transaction table are visible.
+- Tablet: KPI cards render in a two-column layout. The transaction table exceeds the available content width; horizontal scrolling must be usable to access all columns.
+- Mobile: compact transaction cards are displayed; the mobile screenshot shows four recent transactions.
+
+4. FIXTURE DATA TOTALS
+----------------------
+
+- Gross sales: INR 70,436
+- Net sales: INR 66,542
+- Transactions: 48
+- Processing: 10
+
+Status totals:
+- Paid: 23
+- Processing: 10
+- Shipped: 5
+- Delivered: 5
+- Refunded: 5
+- Total: 48
+
+These values are based on the supplied assignment fixtures. They are not live store figures.
+
+5. ISSUES / ITEMS TO CONFIRM BEFORE SUBMISSION
+----------------------------------------------
+
+- Confirm the search filter with a real query and record the outcome.
+- Confirm tablet horizontal scrolling exposes Amount and Status columns.
+- Confirm mobile sidebar opens, closes, and closes with Escape.
+- Production API hosting/configuration is not yet confirmed. The local mock API at localhost:4174 is not publicly accessible from a deployed website.
+- Record the final public HTTPS deployment URL only after deployment has been tested.
+- Confirm the final GitHub repository URL after pushing the finished source.
+
+Do not change this report to claim any unverified test passed.
