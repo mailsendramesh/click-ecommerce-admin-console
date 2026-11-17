@@ -1,8 +1,12 @@
 # Click Ecommerce Admin Console
 
-A responsive React admin workspace for the Click Ecommerce Store India assignment. The interface includes sidebar navigation, dashboard sales cards, recent transactions, and supporting Orders, Products, Customers, Analytics, and Settings views.
+A responsive React admin workspace developed for the Click Ecommerce Store India assignment. The application includes sidebar navigation, dashboard sales cards, recent transactions, and supporting Orders, Products, Customers, Analytics, and Settings views.
 
-> **Data notice:** The figures shown in this project are calculated from the assignment's supplied fixture data. They are sample values, not live store performance.
+**Live Demo:** https://click-ecommerce-admin-console-plp99rv1u-growth-dashboard1.vercel.app/
+
+**GitHub Repository:** https://github.com/mailsendramesh/click-ecommerce-admin-console
+
+> **Data notice:** All figures shown in this project are calculated from the assignment's supplied fixture data. They are sample values, not live store performance.
 
 ## Features
 
@@ -12,26 +16,38 @@ A responsive React admin workspace for the Click Ecommerce Store India assignmen
 - Responsive desktop, tablet, and mobile layouts.
 - Dashboard KPI cards for gross sales, net sales, transactions, and processing orders.
 - Recent transaction list with search filtering.
-- Mock API endpoints for transaction and summary data.
+- Local mock API for transaction and summary data.
+- Vercel serverless API endpoints for production.
 - Loading and API-fallback messaging.
 - Mobile transaction-card presentation and desktop/tablet transaction table.
+- Responsive sidebar navigation with mobile menu support.
 
 ## Requirements
 
 - Node.js (LTS recommended)
 - npm
 
-## Local setup
+## Local Setup
 
-1. Clone the repository.
-2. Open the project directory in a terminal.
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/mailsendramesh/click-ecommerce-admin-console.git
+   ```
+
+2. Open the project directory:
+
+   ```bash
+   cd click-ecommerce-admin-console
+   ```
+
 3. Install dependencies:
 
    ```bash
    npm install
    ```
 
-4. Start the mock API in terminal 1:
+4. Start the local mock API in terminal 1:
 
    ```bash
    npm run api
@@ -45,11 +61,11 @@ A responsive React admin workspace for the Click Ecommerce Store India assignmen
    npm run dev
    ```
 
-6. Open the local URL printed by Vite (normally `http://localhost:5173`).
+6. Open the local URL printed by Vite, normally `http://localhost:5173`.
 
-The Vite development server proxies `/api` requests to the mock API at port `4174`. Keep both processes running while testing the API-backed interface.
+The Vite development server proxies `/api` requests to the local mock API at port `4174`. Keep both processes running while testing the API-backed interface.
 
-## Available scripts
+## Available Scripts
 
 | Command | Purpose |
 |---|---|
@@ -59,12 +75,14 @@ The Vite development server proxies `/api` requests to the mock API at port `417
 | `npm run build` | Create the production build in `dist/` |
 | `npm run preview` | Preview the production build locally |
 
-## Mock API and fixture data
+## Mock API and Fixture Data
 
 The project includes supplied fixture data under `fixtures/` and local fallback copies under `src/data/`.
 
+Local development endpoints:
+
 - `GET /api/transactions` returns the transaction fixture records.
-- `GET /api/summary` returns the dashboard metric rules/summary.
+- `GET /api/summary` returns the dashboard metric rules and summary.
 - The Vite development proxy forwards `/api` requests to `http://localhost:4174`.
 
 The dashboard values verified from the supplied fixtures are:
@@ -89,10 +107,33 @@ Transaction status totals:
 
 The difference between gross and net sales is ₹3,894, matching the refunded transaction value in the supplied fixture data.
 
-## Project structure
+## Production Deployment
+
+The application is deployed to Vercel.
+
+**Production URL:** https://click-ecommerce-admin-console-plp99rv1u-growth-dashboard1.vercel.app/
+
+Production API endpoints:
+
+- `GET /api/transactions` — Returns the 48 supplied transaction records.
+- `GET /api/summary` — Returns dashboard summary metrics.
+
+The production API uses Vercel serverless functions in the `api/` directory. The local development environment uses the mock API in `mock-api/`.
+
+The following production endpoints were checked successfully:
+
+- `/api/transactions`
+- `/api/summary`
+
+The live dashboard was also opened and checked after deployment.
+
+## Project Structure
 
 ```text
 click-ecommerce-admin/
+├── api/
+│   ├── summary.js
+│   └── transactions.js
 ├── fixtures/
 │   ├── catalog.csv
 │   ├── dashboard_metric_rules.json
@@ -125,40 +166,38 @@ click-ecommerce-admin/
 ├── .gitignore
 ├── index.html
 ├── package.json
+├── package-lock.json
 ├── README.md
+├── TEST_RESULTS.txt
 └── vite.config.js
 ```
 
-## Responsive viewports checked
+## Responsive Viewports Checked
 
 - Desktop: 1440 × 900
 - Tablet: 768 × 1024
 - Mobile: 390 × 844
 
-The final evidence screenshots should be stored separately in the submission evidence folder using these filenames:
+## Tests and Build
 
-- `Desktop_1440_result.png`
-- `Tablet_768_result.png`
-- `Mobile_390_result.png`
-
-## Tests and build
-
-Run:
+Run the following commands:
 
 ```bash
 npm run test:fixtures
 npm run build
 ```
 
-Record the actual output and browser/version used for manual checks in `TEST_RESULTS.txt`. Do not mark a check as passed unless it was actually performed.
+The fixture validation test completed successfully with 1 test passed and 0 failures. The Vite production build also completed successfully.
 
-## Known limitations / remaining deployment work
+Manual browser checks should be recorded in `TEST_RESULTS.txt`, including the browser/version and tested viewport dimensions.
 
-- The current API is a local mock API backed by supplied fixtures; it is not a production backend.
-- The Vite proxy configuration is for local development only. A deployed frontend will not be able to reach the developer's `localhost` mock API. Before public deployment, configure a production API endpoint or deploy the mock API as a separately reachable service and update the frontend configuration.
-- Fixture data is sample assignment data and must not be described as live store data.
-- The transaction table uses horizontal scrolling where its columns exceed the available tablet width; verify that users can scroll to the Amount and Status columns.
-- Authentication, role management, and live ecommerce integrations are outside the current supplied scope.
+## Known Limitations
+
+- The application uses supplied fixture data rather than a live ecommerce database.
+- Authentication and role management are outside the current assignment scope.
+- Live ecommerce platform integrations are not included.
+- The local mock API is intended for development; production requests use Vercel serverless API endpoints.
+- The transaction table uses horizontal scrolling where its columns exceed the available tablet width.
 
 ## License
 
