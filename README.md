@@ -180,7 +180,7 @@ click-ecommerce-admin/
 
 ## Tests and Build
 
-Run the following commands:
+Run the following commands separately:
 
 ```bash
 npm run test:fixtures
