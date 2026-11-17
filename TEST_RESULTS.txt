@@ -78,8 +78,16 @@ These values are based on the supplied assignment fixtures. They are not live st
 - Confirm the search filter with a real query and record the outcome.
 - Confirm tablet horizontal scrolling exposes Amount and Status columns.
 - Confirm mobile sidebar opens, closes, and closes with Escape.
-- Production API hosting/configuration is not yet confirmed. The local mock API at localhost:4174 is not publicly accessible from a deployed website.
-- Record the final public HTTPS deployment URL only after deployment has been tested.
-- Confirm the final GitHub repository URL after pushing the finished source.
+- Production deployment completed successfully on Vercel.
+- Production API endpoints `/api/summary` and `/api/transactions` were opened and returned JSON responses.
+- Confirm the final responsive screenshots are saved in the submission evidence folder.
+
+Production URL:
+https://click-ecommerce-admin-console-plp99rv1u-growth-dashboard1.vercel.app/
+
+GitHub Repository:
+https://github.com/mailsendramesh/click-ecommerce-admin-console
+
+The production API uses Vercel serverless functions. The local mock API at `localhost:4174` is used only for local development.
 
 Do not change this report to claim any unverified test passed.
